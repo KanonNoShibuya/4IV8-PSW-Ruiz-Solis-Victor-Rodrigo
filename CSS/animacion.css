@@ -1,12 +1,20 @@
-/* vamos a crear una animacion a partir de frames y los vamos a hacer
-girar, altermar y transformar */
+/*
+Vamos a crear una animacion a partir
+de frames, y los vamos a hacer girar, 
+alternar y transformar
+*/
 
 @keyframes animacion_test{
-    from{
-        background-color: red;
+    0%{
+        background-color: #fcadfe;
     }
-    to{
-        background-color: yellow;
+
+    50%{
+        background-color: #cd222b;
+    }
+
+    100%{
+        background-color: #79eef5;
     }
 }
 
@@ -30,55 +38,55 @@ girar, altermar y transformar */
     }
 }
 
-/*reglas de las clases*/
+/*vamos a dar las reglas de las clases*/
 
-.Label-container{
+.label-container{
     width: 100%;
     padding: 1rem;
-    border: 2px solid rgb(52,52,52);
     box-sizing: border-box;
+
 }
 
-.Label{
+.label{
     width: 64px;
-    background-color: rgb(52,582,52);
+    background-color: rgb(231, 107, 204);
     color:white;
     font-size: 1rem;
-    padding: 1rem  ;
+    padding: 1rem;
     border-radius: 20px;
     text-align: center;
-
+    /*aqui es donde animamos*/
     animation-name: label-animation;
     animation-duration: 2s;
-    animation-timing-function: ease-in-out  ;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 
-.Loader{
+.loader{
     width: 64px;
     height: 64px;
-    border: 5px solid rgb(77,2,3);
-    border-top: 5px solid rgb(52,77,52);
+    border: 5px solid rgb(223, 97, 39);
+    border-top: 5px solid rgb(114, 95, 76);    
     border-radius: 50%;
     animation: girar 2s linear infinite;
 }
 
-.Loader-doble{
+.loader-doble{
     width: 64px;
     height: 64px;
-    border: 16px solid rgb(789,56,72);
-    border-top: 16px solid rgb(69,96,100);
+    border: 64px solid #565658;
+    border-top: 32px solid rgb(214, 41, 113);
+    border-bottom: 16px solid rgb(235, 203, 24);    
     border-radius: 50%;
-    border-bottom: 16px solid rgb(5,10,15);
     animation: girar 2s ease-in-out infinite;
 }
 
 .animada{
     width: 100%;
-    background-color: red;  
-    color: wheat;
+    background-color: red;
+    color: rgb(255, 255, 255);
     text-align: center;
     height: 200px;
     display: flex;
@@ -88,5 +96,4 @@ girar, altermar y transformar */
     animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-
 }
