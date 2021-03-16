@@ -1,8 +1,8 @@
 :root{
-    --body-bg-color:rgba(184, 48, 48, 0.918);
-    --text-color:rgb(80, 168, 80);
+    --body-bg-color:#962751;
+    --text-color:#125632;
     --hr-color: #523941;
-    --red:red;
+    --red:#e74c3c;
 }
 
 *{
@@ -11,7 +11,7 @@
 }
 
 ul{
-    list-style-type: none;
+    list-style: none;
 }
 
 a{
@@ -22,7 +22,8 @@ a{
 body{
     margin: 30px 0;
     font: 22px sans-serif;
-    background: var(--text-color);
+    background: var(--body-bg-color);
+    color: var(--text-color);
 
 }
 
@@ -88,7 +89,7 @@ hr{
 }
 
 
-.menu[data-animation = "to-top"] a span:last-child{
+.menu[data-animation ="to-top"] a span:last-child{
     transform: translateY(100%);
 }
 
@@ -96,19 +97,19 @@ hr{
     transform: translateY(-100%);
 }
 
-.menu[data-animation = "to-right"] a span:last-child{
-    transform: translateX(100%);
-}
-
-.menu[data-animation = "to-right"] a span:first-child{
+.menu[data-animation ="to-right"] a span:last-child{
     transform: translateX(-100%);
 }
 
-.menu[data-animation = "to-left"] a span:last-child{
+.menu[data-animation ="to-right"] a span:first-child{
     transform: translateX(100%);
 }
 
-.menu[data-animation = "to-left"] a span:first-child{
+.menu[data-animation ="to-left"] a span:last-child{
+    transform: translateX(100%);
+}
+
+.menu[data-animation ="to-left"] a span:first-child{
     transform: translateX(-100%);
 }
 
@@ -121,5 +122,5 @@ hr{
 
 .page-footer span{
     color:var(--red);
-    
+
 }
